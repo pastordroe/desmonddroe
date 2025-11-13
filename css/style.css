@@ -1,0 +1,100 @@
+.welcome h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    padding: 5px;
+}
+
+.header nav li{
+    margin-right: 15pc;
+    float: left;
+    position: relative;
+}
+
+.header nav li a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 25px 12px;
+    position: relative;
+    display: inline-block;
+    position: relative;
+
+}
+
+.header nav li a ::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background: #1a76d1;
+    border-radius: 5px 5px 0 0;
+    opacity: O;
+    visibility: hidden;
+    -webkit-transition: all 0,4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.header nav li.active a::before{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+
+}
+.header nav li.active a {
+    color: #1a76d1;
+}
+
+header nav li :hover a : before {
+    opacity: 1;
+    width : 100%; 
+visibility : visible;
+}
+.header nav : :hover a  {
+color:#1a76d1;
+
+}
+.header nav li a i {
+    display: inline-block;
+    margin-left: 1px;
+    font-size: 1px;
+    font-size: 13px;
+}
+.header nav a {
+    color: white;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.img1{
+    padding: 10px;
+    float: right;
+
+}
+
+.img2{ 
+    padding: 10px;
+    float: left;
+}
+
+.img3{
+    padding: 10px;
+    float: right;
+}
+
+.img4{ 
+    padding: 10px;
+    float: left;
+}
